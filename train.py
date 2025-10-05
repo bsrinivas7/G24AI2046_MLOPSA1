@@ -3,4 +3,5 @@ from sklearn.tree import DecisionTreeRegressor
 
 if __name__ == "__main__":
     print("__Running DecisionTreeRegressor Training Pipeline__")
-    run_training_pipeline(DecisionTreeRegressor)
+    run_training_pipeline(lambda: DecisionTreeRegressor(max_depth=5))
+
